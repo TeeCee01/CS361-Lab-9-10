@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Thandiwe Chambani</h1>
+        <nav>
+        <a href="#about">About Me</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact Details</a>
+        <button id="theme-toggle"> Dark Mode</button> <!--Dark mode toogle-->
+    </nav>
+    </header>
+
+    <main>
+        <article id="about">
+            <h2>About Me</h2>
+            <p>I am a 3rd Year Computer Science student at the Copperbelt University,with an interest in web development, design,operating systems and cyber security.I enjoy working with others, learning and discovering how technology evolves and how it can help with  solving real-world problems.</p>
+            <p>Currently, I am learning Java, and basic web development, which has been very intersting. I have experience with C++, and  I want to learn how to design User Interfaces for applications. Outside academics, I love to bake, take walks, take pictures of nature and read.</p>
+
+        <h3>Hobbies and Interests</h3>
+        <ul>
+            <li>Coding</li>
+            <li>Reading</li>
+            <li>Baking</li>
+            <li>Watching movies</li>
+            <li>Photography</li>
+        </ul>
+
+        <!--Click counter Section-->
+        <div id="counter-section">
+            <p>Clicks: <span id="click-count">0</span></p>
+            <button id="counter-btn">Click Me</button>
+        </div>
+        </article>
+
+        <article id="courses">
+        <h3>Top Academic Courses</h3>
+        <ol>
+            <li>Data Structures and Algorithms</li>
+            <li>Web Development</li>
+            <li>Computer Communications and Networks</li>
+        </ol>
+        </article>  
+
+        <!--Rendered list from data + live search filter-->
+        <section id="suggested-courses">
+            <h3>Suggested Courses</h3>
+            <input type="text" id="course-search" placeholder="Search courses...">
+            <ul id="course-list"></ul>
+            <button id="add-course-btn">Add Course</button>
+        </section>
+
+        <!--Signup form with validation-->
+        <section id="signup">
+            <h3>Sign Up for Updates</h3>
+            <form id="signup-form">
+                <label for="signup-name">Name:</label>
+                <input type="text" id="signup-name" name="name" required>
+                <label for="signup-email">Email:</label>
+                <input type="email" id="signup-email" name="email" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p id="form-message"></p>
+        </section>
+
+    </main>
+    <aside>
+        <figure>
+            <img src="profile.jpg" alt="Photo of Thandiwe Chambani" width="200" height="200">
+            <figcaption>Thandiwe Chambani- Year 3 CS Student</figcaption>
+            </figure>
+        <h3>Connect with me on:</h3>
+        <p><a href="https://github.com/TeeCee01">GitHub</a></p>
+        <p><a href="https://www.linkedin.com/in/ThandiweChambani">Linkedin</a></p>
+        <p><a href="mailto:thandiwechambani@gmail.com">Email</a></p>
+
+        <dl>
+            <dt>Department:</dt>
+            <dd>Computer Science</dd>
+            <dt>Year:</dt>
+            <dd>3rd Year</dd>
+            <dt>Programme:</dt>
+            <dd>Bsc in Computer Science</dd>
+        </dl>
+    </aside>
+    
+    <footer id="contact">
+        <p>Contact:thandiwechambani@gmail.com</p>
+        <p>&copy; 2026 Thandiwe Chambani- Year 3 Computer science student</p>
+    </footer>
+
+</body>

@@ -1,0 +1,190 @@
+body{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #dae1e7;
+    grid-template-columns: 2.5fr 1fr;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "footer footer";
+}
+
+header{
+    background-color: #333333;
+    color: #ffffff;
+}
+
+nav{
+    margin-top: 10px;
+}
+nav a{
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+    padding: 20px;
+}
+
+aside{
+    grid-area: aside;
+    background-color: #f3e5f5;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 8px;
+}
+aside figure{
+    text-align: center;
+}
+aside img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+footer{
+    grid-area: footer;
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+footer p{
+    margin: 5px 0;
+}
+
+article{
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    line-height: 1.6;
+}
+
+figure{
+    text-align: center;
+}
+
+img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+a{
+    color: #6a1b9a;
+}
+
+a:hover{
+    color: #ab47bc;
+}
+
+/* Click counter*/
+#counter-section{
+    margin-top: 15px;
+}
+#counter-btn, #add-course-btn, #theme-toggle{
+    background-color: #6a1b9a;
+    color: #ffffff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+}
+#counter-btn:hover, #add-course-btn:hover, #theme-toggle:hover{
+    background-color: #ab47bc;
+}
+
+/*Suggested courses list + search */
+#suggested-courses{
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+#course-search{
+    padding: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-family: inherit;
+}
+#course-list li{
+    padding: 4px 0;
+}
+
+/*Signup form */
+#signup{
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+}
+#signup-form label{
+    display: block;
+    margin-top: 8px;
+}
+#signup-form input{
+    padding: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+#signup-form button{
+    margin-top: 10px;
+    background-color: #6a1b9a;
+    color: #ffffff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.form-success{
+    color: green;
+    font-weight: bold;
+}
+.form-error{
+    color: red;
+    font-weight: bold;
+}
+
+/*Dark mode theme*/
+body.dark{
+    background-color: #121212;
+    color: #e0e0e0;
+}
+body.dark header{
+    background-color: #000000;
+}
+body.dark article,
+body.dark #suggested-courses,
+body.dark #signup{
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+body.dark aside{
+    background-color: #2a1a33;
+    color: #e0e0e0;
+}
+body.dark footer{
+    background-color: #000000;
+}
+body.dark a{
+    color: #ce93d8;
+}
+body.dark a:hover{
+    color: #f3e5f5;
+}
