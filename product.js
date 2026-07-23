@@ -6,7 +6,7 @@ export class Product {
     this.price = price;
   }
 
-  // returns the price with 10% tax added
+  // returns the price with 16% tax added
   withTax() {
     return this.price + this.price * 0.16;
   }
