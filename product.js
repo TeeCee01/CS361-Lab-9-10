@@ -8,6 +8,6 @@ export class Product {
 
   // returns the price with 10% tax added
   withTax() {
-    return this.price + this.price * 0.10;
+    return this.price + this.price * 0.16;
   }
 }
