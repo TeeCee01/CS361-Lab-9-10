@@ -105,7 +105,8 @@ a:hover{
     cursor: pointer;
     font-family: inherit;
 }
-#counter-btn:hover, #add-course-btn:hover, #theme-toggle:hover{
+#counter-btn:hover, #add-course-btn:hover, #theme-toggle:hover, #clear-cart-btn:hover
+{
     background-color: #ab47bc;
 }
 
@@ -188,3 +189,65 @@ body.dark a{
 body.dark a:hover{
     color: #f3e5f5;
 }
+
+/*Fetched user cards*/
+#users{
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+#user-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 12px;
+    margin-top: 10px;
+}
+.user-card{
+    background-color: #f3e5f5;
+    padding: 10px;
+    border-radius: 6px;
+}
+.user-card h4{
+    margin: 0 0 5px 0;
+}
+
+/*Store and cart */
+#store{
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+}
+#product-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 12px;
+    margin-top: 10px;
+}
+.product-card{
+    background-color: #f3e5f5;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+}
+.product-card button{
+    margin-top: 8px;
+    background-color: #6a1b9a;
+    color: #ffffff;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.product-card button:hover{
+    background-color: #ab47bc;
+}
+#cart{
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px solid #dae1e7;
+}
+#cart-items{
+    padding-left: 20px;
+}
+
