@@ -47,6 +47,9 @@ addCourseBtn.addEventListener("click", () => {
 
   renderCourses(courses);
 
+  //const newItem = document.createElement("li");
+  //newItem.textContent = newCourseName;
+  //courseList.appendChild(newItem);
 });
 
 //5. Live Search Filter 
